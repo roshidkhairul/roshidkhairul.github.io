@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_7</title>
+</head>
+<body>
+  <h1>Question A</h1>
+
+
+  <script>
+class Person{
+    constructor (fname, lname,birthday,email,phoneNo,nidNO,drivingLicenceNo,jobJoin){
+        this.firstname = fname;
+        this.lastname = lname;
+        this.dob = birthday; 
+        this.email = email;
+        this.phoneNo = phoneNo; 
+        this.nidNO = nidNO;
+        this.drivingLicenceNo = drivingLicenceNo; 
+        this.jobJoin = jobJoin;
+      
+    }
+
+    calculateRetirement(){
+        let birthday = new Date(this.dob);
+        let JoinDate = new Date(this.jobJoin);
+        let diff = Date.now() - birthday.getTime();
+        let ageDate = new Date(new Date(diff));
+        return Math.abs (ageDate.getUTCFullYear()-1970);
+    }
+
+    fullname(){
+        console.log(this.firstname, this.lastname)
+    }
+}
+
+let JohnObject = new Person ("John", "John", "11-12-97", "john@gmail.com", "+9154548864", "656454", "5646545646", "11-12-2020");
+
+
+if(parseInt(JohnObject.calculateRetirement()) < 16){
+    console.log("John is less than 16 years old");
+}else if(parseInt(JohnObject.calculateRetirement()) > 65){
+    console.log(JohnObject.calculateRetirement());
+}else{
+    var ageCalcforRetirement = 65 - parseInt(JohnObject.calculateRetirement());
+    console.log(`${ageCalcforRetirement} years to retire`);
+}
+
+
+  </script>
+</body>
+</html>

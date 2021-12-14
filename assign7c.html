@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_7</title>
+</head>
+<body>
+  <h3>question c</h3>
+
+  <script>
+    function bmiCalc(mass, height, name){
+//BMI scores of 20 to 24.9 are considered normal,
+// scores of 25 to 29.9 are overweight, 
+//scores of 30 to 34.9 are obese, and 
+//scores above 35 are extremely obese.
+// Scores under 20 are considered underweight.
+        var bmiResult = mass / Math.pow(height, 2);
+        var roundedResult = Math.floor(bmiResult);
+      
+        return roundedResult;
+      }
+      
+      
+var markMass = prompt ("Enter mark Mass...");
+var markHeight = prompt ("Enter mark Height...")
+
+var MarkbmiCalcResult = bmiCalc(markMass, markHeight, "Mark");
+
+if(MarkbmiCalcResult <20){
+        alert("underweight")
+}
+if(MarkbmiCalcResult >=20 && MarkbmiCalcResult<=24.9){
+        alert("Normal")
+}
+
+if(MarkbmiCalcResult >=25 && MarkbmiCalcResult<=29.9){
+        alert("overweight")
+}
+if(MarkbmiCalcResult >=30 && MarkbmiCalcResult<=34.9){
+        alert("obese")
+}
+if(MarkbmiCalcResult >=35){
+        alert("extremely obese")
+}
+console.log(MarkbmiCalcResult);
+
+var johnMass = prompt ("Enter john Mass...");
+var johnHeight = prompt ("Enter john Height...")
+
+var JohnbmiCalcResult = bmiCalc(johnMass, johnHeight, "John");
+if(JohnbmiCalcResult <20){
+        alert("underweight")
+}
+if(JohnbmiCalcResult >=20 && JohnbmiCalcResult<=24.9){
+        alert("Normal")
+}
+
+if(JohnbmiCalcResult >=25 && JohnbmiCalcResult<=29.9){
+        alert("overweight")
+}
+if(JohnbmiCalcResult >=30 && JohnbmiCalcResult<=34.9){
+        alert("obese")
+}
+if(JohnbmiCalcResult >=35){
+        alert("extremely obese")
+}
+console.log(JohnbmiCalcResult);
+
+
+var lucasMass = prompt ("Enter lucas Mass...");
+var lucasHeight = prompt ("Enter lucas Height...")
+
+var lucasbmiCalcResult = bmiCalc(lucasMass, lucasHeight, "lucas");
+if(lucasbmiCalcResult <20){
+        alert("underweight")
+}
+if(lucasbmiCalcResult >=20 && lucasbmiCalcResult<=24.9){
+        alert("Normal")
+}
+
+if(lucasbmiCalcResult >=25 && lucasbmiCalcResult<=29.9){
+        alert("overweight")
+}
+if(lucasbmiCalcResult >=30 && lucasbmiCalcResult<=34.9){
+        alert("obese")
+}
+if(lucasbmiCalcResult >=35){
+        alert("extremely obese")
+}
+console.log(lucasbmiCalcResult);
+      
+      
+      
+      
+  </script>
+</body>
+</html>
