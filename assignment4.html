@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment :- 4</title>
+</head>
+<body>
+  
+
+<h2>Assignment: -4</h2>
+
+
+
+
+
+
+  <script>
+
+/////////////////////////////////Question A
+
+
+const C = 10;
+const F = 32;
+
+const convertC = ((F-32)/1.8);
+const convertF = ((1.8*C)/32);
+
+// question a 
+
+const result1 = (`It's getting colder! Let's cover the temperature here, ${C}°C is ${convertF}°F.`); 
+
+console.log(result1);
+
+const result2 = (`It's getting colder! Let's cover the temperature here, ${F}°F is ${convertC}°C.`); 
+
+
+console.log(result2);
+
+
+// question B
+
+let LWeight = 78;
+let LHeight = 1.69;
+let JWeight = 92;
+let JHeight = 1.95;
+
+let LBMI = (LWeight/(LHeight * LHeight));
+let JBMI = (JWeight/(JHeight * JHeight));
+
+if (LBMI > JBMI) {
+  console.log(`Lucas' BMI: ${LBMI} is higher than John's: ${JBMI}!`);
+}
+else{
+  console.log(`John's BMI: ${JBMI} is higher than Lucas': ${LBMI}!`);
+}
+
+
+
+
+
+  </script>
+</body>
+</html>
