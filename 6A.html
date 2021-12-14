@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment:6</title>
+  </head>
+  <body>
+
+<h1>Assignment 6</h1>
+<p>Question A</p>
+
+<script type="text/javascript">
+  let avg = 0;
+  let test11stPoint = 0;
+  let test12ndPoint = 0;
+  let test13rdPoint = 0;
+
+  let test21stPoint = 0;
+  let test22ndPoint = 0;
+  let test23rdPoint = 0;
+
+  const calAverage = (score1, score2, score3) => {
+    age = (score1 + score2 + score3)/3;
+    return avg;
+  }
+
+  const winnerCheck = (angNets, aveKnicks) => {
+    if (angNets > aveKnicks){
+      console.log("angNets wins!");
+    }else if (angNets < aveKnicks){
+      console.log("aveKnicks wins!");
+    }else{
+      console.log("Draw!")
+    }
+  }
+  for (var i = 0; i<3; i++){
+    test11stPoint = prompt("Enter angNets 1st point");
+    test12ndPoint = prompt("Enter angNets 2nd point");
+    test13rdPoint = prompt("Enter angNets 3rd point");
+
+    test21stPoint = prompt("Enter angNets 1st point");
+    test22ndPoint = prompt("Enter angNets 2nd point");
+    test23rdPoint = prompt("Enter angNets 3rd point");
+  }
+
+  const test1 = calAverage(test11stPoint,test12stPoint,test13stPoint);
+  const test2 = calAverage(test21stPoint,test22stPoint,test23stPoint);
+
+  winnerCheck(test1, test2);
+</script>
+  </body>
+</html>

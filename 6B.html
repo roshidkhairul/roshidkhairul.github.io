@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 6</title>
+  </head>
+  <body>
+<h1>Question B</h1>
+<script type="text/javascript">
+
+  let BMIofaPerson = 0;
+
+  const BMI = (mass, height) => {
+    BMIofaPerson = mass / (height*height);
+    return BMIofaPerson;
+  }
+  let mass = prompt("Enter mass of the person in KG");
+  let height = prompt("Enter the Height of the person in meter");
+
+  const totalBMI = BMI(mass, height);
+
+  console.log(`BMI = ${totalBMI}`);
+
+</script>
+  </body>
+</html>
