@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment 8</title>
+</head>
+<body>
+  <h2>Part B</h2>
+
+  <script>
+    let bil = [100,300,100];
+let tip = [10,20,10]
+
+function totalCounter(bilArray,tipArray){
+    let total=0;
+    bilArray.forEach((e,i)=>{
+        total += e+tipArray[i] ;
+    })
+    return total;
+}
+
+console.log(totalCounter(bil,tip));
+  </script>
+</body>
+</html>
