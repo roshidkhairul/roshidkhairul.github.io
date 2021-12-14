@@ -1,0 +1,31 @@
+body {
+  background-color: lightblue;
+}
+
+.box3{
+width: 100%;
+height: 100%;
+display: flex;
+padding: 0px 20px 30px 40px;
+}
+.picbox{
+  width: 50%;
+  height: 200px;
+  border: 2px solid red;
+  float: left;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ .textbox{
+  width: 35%;
+  height: 200px;
+  border: 2px solid blue;
+}
+
+h1 {
+  text-align: center;
+}
