@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Temperature Hot</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url(images/bg-image.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body
+    onload="getNewWorkWeather('New York City'), getLosWeather('Los Angeles')"
+  >
+    <div class="container">
+      <div class="weather-status text-white text-center">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" />
+        <h1 id="show-city">New York City</h1>
+        <h3><span id="temp"></span>&deg;C</h3>
+      </div>
+      <div class="weather-status text-white text-center">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" />
+        <h1 id="show-city">Los Angeles</h1>
+        <h3><span id="tempLos"></span>&deg;C</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
