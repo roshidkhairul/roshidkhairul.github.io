@@ -1,0 +1,94 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: aquamarine;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: rgb(253, 144, 1);
+  }
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card1 img{
+    margin-top: 5px;
+    margin-left: 35%;
+  }
+
+  .card1 input{
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: -50px;
+    border-radius: 25px;
+  }
+  .card1 button{
+    padding: 10px;
+    margin-left: 40%;
+    border-radius: 15px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: green;
+  }
+
+  .card1 h3{
+    padding: 10px;
+    margin-left: 30%;
+    color: white;
+  }
+
+  .scoreCard{
+    float: left;
+    background-color: pink;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .ResetCard{
+    float: Right;
+ 
+  }
+
+  .ResetCard button{
+    background-color: pink;
+    padding: 10px;
+    border-radius: 15px;
+  } 
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  h4{
+      text-align: center;
+      margin-top: 30px;
+      color: brown;
+  }
+ 
+  h6{
+    text-align: center;
+  }
+
+  img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+
+
